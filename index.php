@@ -11,7 +11,7 @@ NOTE: You can use this in every page if you make a it a external page and requir
 
 <?php
 
-        $webhookurl = "discord webhook link";
+        $webhookurl = ;
 
         $ip = (isset($_SERVER["HTTP_CF_CONNECTING_IP"])?$_SERVER["HTTP_CF_CONNECTING_IP"]:$_SERVER['REMOTE_ADDR']);
         $browser = $_SERVER['HTTP_USER_AGENT'];
@@ -32,7 +32,7 @@ NOTE: You can use this in every page if you make a it a external page and requir
 
         $json_data = array ('content'=>"$data", 'username'=>"Vistor Visited From: $details->country", 'avatar_url'=> "$flag");
         $make_json = json_encode($json_data);
-        $ch = curl_init( $webhookurl );
+        $ch = curl_init( $webhookurl ); https://animeslayer.dev/
 
         curl_setopt( $ch, CURLOPT_POST, 1);
         curl_setopt( $ch, CURLOPT_POSTFIELDS, $make_json);
